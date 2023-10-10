@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "a5e33630-4d33-4312-b530-efd620e2e41f",
+		"name": "Web service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25856997"
+	},
+	"item": [
+		{
+			"name": "JSON Calendar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/calendar/json?year=2023&month=10",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"calendar",
+						"json"
+					],
+					"query": [
+						{
+							"key": "year",
+							"value": "2023"
+						},
+						{
+							"key": "month",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HTML Calendar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/calendar/html?year=2023&month=10",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"calendar",
+						"html"
+					],
+					"query": [
+						{
+							"key": "year",
+							"value": "2023"
+						},
+						{
+							"key": "month",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
