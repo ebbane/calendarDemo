@@ -90,33 +90,36 @@ Instructions à suivre (conseillé) pour le lancement du projet en local.
    ```
 3. Lancer la démo (via docker) :
    ```sh
-   cd calendarDemo/docker
+   cd calendarDemo
    docker-compose up -d
    ```
 
-#### Avec maven 
+#### Avec maven
 
 1. Cloner le repo (ou dézipper le dossier)
    ```sh
    git clone git@github.com:ebbane/calendarDemo.git
    ```
 
-2. Pour lancer la demo vous avez trois possibilitées : 1 - lancer l'application à partir du jar
-   fourni (ressource/demo.jar), 2 - générer un nouveau jar, 3 - lancer l'application via spring
+2. Pour lancer la demo vous avez trois possibilitées :
 
-    1. ````sh
+   1. lancer l'application à partir du jar  fourni (ressource/demo.jar)
+   ````sh
        cd resources
        java -jar demo.jar
-       ````
-   depuis demo
-    2. ````sh
+   ````
+
+   2.  générer un nouveau jar
+   ````sh
        mvn clean package
        java -jar target/demo.jar
-       ````
-    3. ```` sh
+   ````
+
+   3. lancer l'application via spring
+   ```` sh
        mvn clean install -DskipTests=true
        mvn spring-boot:run
-       ````
+   `````
 
 
 ## Utilisation
@@ -124,10 +127,10 @@ Cette API REST met à disposition deux endpoint :
 - /calendar/json
 - /calendar/html
 
-Ces deux endpoints ont deux paramètre : **year** et **month** 
+Ces deux endpoints ont deux paramètre : **year** et **month**
 
 Vous trouverez dans /ressources un exemple de collection Postman permettant de contacter l'API en local.
-    
+
 
 
 ## Commandes utiles
